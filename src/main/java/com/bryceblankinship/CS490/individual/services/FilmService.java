@@ -1,5 +1,6 @@
 package com.bryceblankinship.CS490.individual.services;
 
+import com.bryceblankinship.CS490.individual.dto.ActorDTO;
 import com.bryceblankinship.CS490.individual.dto.FilmDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -23,6 +24,25 @@ public class FilmService {
                     .category(rs.getString("category"))
                     .rentalCount(rs.getInt("rental_count")).
                     build();
+
+            res.add(dto);
+        });
+
+        return res;
+    }
+
+    public List<ActorDTO> getTopActors(){
+        List<ActorDTO> res = new ArrayList<>();
+
+        jdbc.query("SELECT actor.actor_id, actor.first_name, actor.last_name, COUNT(*) as movies FROM actor " +
+                "JOIN film_actor on actor.actor_id = film_actor.actor_id " +
+                "GROUP BY actor.actor_id ORDER BY (COUNT(*)) DESC LIMIT 5;", rs -> {
+            ActorDTO dto = ActorDTO.builder()
+                    .id(rs.getInt("actor.actor_id"))
+                    .firstName(rs.getString("actor.first_name"))
+                    .lastName(rs.getString("actor.last_name"))
+                    .movies(rs.getInt("movies"))
+                    .build();
 
             res.add(dto);
         });

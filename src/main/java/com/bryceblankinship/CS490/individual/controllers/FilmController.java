@@ -19,4 +19,9 @@ public class FilmController {
         return ResponseEntity.ok(filmService.getTopFilms());
     }
 
+    @GetMapping("/actors")
+    private ResponseEntity<?> getTopActors(){
+        return ResponseEntity.ok(filmService.getTopActors());
+    }
+
 }
