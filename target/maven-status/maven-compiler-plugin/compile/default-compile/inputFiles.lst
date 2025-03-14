@@ -1,1 +1,9 @@
 /Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/Application.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/controllers/CustomerController.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/controllers/FilmController.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/controllers/HealthcheckController.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/dto/ActorDTO.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/dto/CustomerDTO.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/dto/FilmDTO.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/services/CustomerService.java
+/Users/bryceblankinship/Documents/NJIT/CS490/MS2/server/src/main/java/com/bryceblankinship/CS490/individual/services/FilmService.java
